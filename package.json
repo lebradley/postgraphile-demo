@@ -1,0 +1,16 @@
+{
+  "name": "postgraphile-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\"",
+    "connect": "postgraphile -c \"postgres:///micro\"",
+    "connect:watch": "postgraphile -c \"postgres://postgres:postgres@localhost:5555/micro\" --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "postgraphile": "^4.5.5"
+  }
+}
