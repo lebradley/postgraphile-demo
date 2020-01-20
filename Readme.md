@@ -1,8 +1,10 @@
-# Postgraphile Demo
+# GraphQL on a SQL DB - Demo
 
 [Postgraphile](https://www.graphile.org/postgraphile/quick-start-guide/) automatically takes a PostgreSQL database and provides a GraphQL server. 
 
-## Run the demo 
+[Hasura](https://hasura.io/) is an open source engine which connects databases and microservices to give you a "production ready" GraphQL API. 
+
+## Get a Postgres DB
 
 Requires docker and npm. In your commandline:
 
@@ -28,6 +30,8 @@ host: localhost
 port: 5555
 database: micro
 ```
+
+## POSTGRAPHILE
 
 To run postGraphile in watcher mode:
 
@@ -58,3 +62,10 @@ This gives us a GraphQL api and Graphiql playground at http://localhost:5000/gra
   }
 }
 ```
+
+## HASURA
+
+To run Hasura, run the `./docker-run.sh` file. Open the Hasura console at http://localhost:8080/console
+
+You can track Tables & Views through the console, using these instructions: https://docs.hasura.io/1.0/graphql/manual/schema/using-existing-database.html
+
